@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+div {
+  font-size: 0;
+}
+
+a {
+  font-size: 16px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+
+#thumbnails
+{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+.bigboxedimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+a.next,a.prev{
+  width: auto;
+  padding: 2rem;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+}
+
+a.next
+{
+    position: absolute;
+    right:1%
+}
+
+a.prev
+{
+    position: absolute;
+    left:1%
+}
+
+a:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+}
+.activeThumb
+{
+    opacity:0.4;
+}
